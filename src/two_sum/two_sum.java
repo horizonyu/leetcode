@@ -31,6 +31,7 @@ public class two_sum {
 		
 	}
 
+	//Time complexity : O(n^2),Space complexity : O(1).
 	private static int[] twoSum(int[] temp, int target) {
 		for (int i=0; i<temp.length; i++){
 			int sub = target - temp[i];
@@ -45,6 +46,7 @@ public class two_sum {
 	}
 	
 	//One-pass Hash Table
+	//Time complexity : O(n),Space complexity : O(n).
 	private static int[] twoSum1(int[] temp, int target){
 		Map<Integer,Integer> map = new HashMap<>();
 		for (int i=0; i<temp.length;i++){
